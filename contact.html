@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Css -->
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
+  <body>
+    <!-- header & bootstrap nav -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"
+              ><img src="/assets/images/logo.svg" alt="Logo" width="190px"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li >
+                  <a href="projects.html" class="active">arhitektura</a>
+                </li>
+                <li>
+                  <a href="projects.html">enterijeri</a>
+                </li>
+                <li>
+                  <a href="projects.html">tržni centri</a>
+                </li>
+                <li>
+                  <a href="about.html">o nama</a>
+                </li>
+                <li>
+                  <a href="clients.html">klijenti</a>
+                </li>
+                <li>
+                  <a href="contact.html">kontakt</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- contact -->
+    <main>
+      <div class="container contact-container">
+        <h1 class="about-title" data-aos="fade-down" data-aos-duration="600">kontaktirajte <span>nas</span></h1>
+        <div class="row contact">
+          <div class="col-12 col-xl-6">
+            <div class="map" data-aos="fade-right" data-aos-duration="600">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1434.8384534481188!2d19.220646553493825!3d44.758844575483785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475be91d68fe4e41%3A0x89e5acc383bd0335!2sQ65C%2BHQ5%2C%20Me%C5%A1e%20Selimovi%C4%87a%2024a%2C%20Bijeljina%2076300!5e0!3m2!1sen!2sba!4v1762424991443!5m2!1sen!2sba"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-12 col-xl-6">
+            <form class="contact-form" data-aos="fade-left" data-aos-duration="600">
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="name">Ime</label><input id="name" type="text" />
+                </div>
+                <div class="form-field">
+                  <label for="lastName">Prezime</label
+                  ><input id="lastName" type="text" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="email">Email</label
+                  ><input id="email" type="text" />
+                </div>
+                <div class="form-field">
+                  <label for="theme"></label>Tema<input
+                    id="theme"
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="desc">Opis</label>
+                <textarea name="desc" id="desc"></textarea>
+              </div>
+              <div class="form-btn">
+                <button>pošalji</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container footer">
+        <div class="socials">
+          <a href="#">
+            <img src="assets/images/facebook.svg" alt="facebook" />
+          </a>
+
+          <a href="#">
+            <img src="assets/images/linkedin.svg" alt="linkedin" />
+          </a>
+          <a href="#">
+            <img src="assets/images/instagram.svg" alt="instagram" />
+          </a>
+        </div>
+        <div class="contact-info">
+          <p>info@email.com</p>
+          <p>+387 55 424 113</p>
+        </div>
+        <p class="address-info">meše selimovića 24a bijeljina</p>
+        <div class="all-rights">
+          <p>projekat.ba &copy; 2025 sva prava zadržana</p>
+          <span
+            >hosted & developed by
+            <a href="https://itsystem.io/" target="_blank">itsystem</a></span
+          >
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- AOS script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--My script -->
+    <script src="./assets/scripts/script.js"></script>
+  </body>
+</html>
