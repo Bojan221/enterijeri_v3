@@ -196,6 +196,11 @@ hr {
   padding-right: 0;
 }
 
+.navbar-toggler.hamburg {
+  border: none;
+  box-shadow: none;
+}
+
 .navbar-nav {
   gap: 70px;
 }
@@ -948,6 +953,7 @@ hr {
   }
   .navbar-nav {
     gap: 15px;
+    padding-left: 15px;
   }
   .home-projects {
     gap: 30px;

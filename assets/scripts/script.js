@@ -377,18 +377,22 @@ document.addEventListener("DOMContentLoaded", function () {
     currentExpandedCard = null;
   }
 
-  // Add click event to project images
+  // Add click event to project cards
   projectCards.forEach((card) => {
     const image = card.querySelector(".project-image");
     
     if (image) {
-      image.addEventListener("click", function (e) {
+      card.addEventListener("click", function (e) {
+        // Mobile: navigate to singleProduct page
         if(window.innerWidth < 768){
+          window.location.href = "singleProduct.html";
           return;
         }
+        
         e.preventDefault();
         e.stopPropagation();
         
+        // Desktop: expand card
         // If already expanded, close it
         if (card.classList.contains("expanded")) {
           closeExpandedCard(card);
