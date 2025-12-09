@@ -270,11 +270,17 @@ document.addEventListener("DOMContentLoaded", function () {
     prevBtn.className = "project-slider-prev";
     prevBtn.innerHTML = '<img src="assets/images/Arrow_left.svg" alt="Previous" />';
     prevBtn.type = "button";
+    prevBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+    });
     
     const nextBtn = document.createElement("button");
     nextBtn.className = "project-slider-next";
     nextBtn.innerHTML = '<img src="assets/images/Arrow_right.svg" alt="Next" />';
     nextBtn.type = "button";
+    nextBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+    });
     
     swiperWrapper.appendChild(prevBtn);
     swiperWrapper.appendChild(nextBtn);
@@ -382,7 +388,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const image = card.querySelector(".project-image");
     
     if (image) {
-      card.addEventListener("click", function (e) {
+      image.addEventListener("click", function (e) {
         // Mobile: navigate to singleProduct page
         if(window.innerWidth < 768){
           window.location.href = "singleProduct.html";

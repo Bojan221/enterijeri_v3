@@ -491,6 +491,7 @@ hr {
   transition: all 0.3s ease-in-out;
   border: none;
   outline: none;
+  pointer-events: auto;
 }
 
 .project-slider-prev {
